@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background: linear-gradient(120deg, rgb(205, 31, 214), rgb(165, 80, 10));
+    
+}
+
+#main{
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#addBtn{
+    position: fixed;
+    border: none;
+    top: 20px;
+    right: 20px;
+    color: azure;
+    background-color: #179712;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#addBtn:hover{
+    background-color: #06a086;
+}
+
+.note{
+    background-color: #393e46;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.note:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);;
+}
+
+.tool{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tool i {
+
+    padding: 0 5px ;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.tool i:hover{
+    color: #aca1a1;
+}
+
+.note textarea{
+    width: 300px;
+    border: none;
+    min-height: 220px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.note textarea:focus{
+    outline: none;
+}
